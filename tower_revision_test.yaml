@@ -2,6 +2,11 @@
   hosts: localhost
   gather_facts: false
   tasks:
+
+    - name: New fancy feature
+      ansible.builtin.debug:
+        msg: "New fancy feature"
+    
     - name: Print ansible revission
       ansible.builtin.debug:
         var: tower_project_revision
