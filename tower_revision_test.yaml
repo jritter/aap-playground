@@ -5,3 +5,6 @@
     - name: Print ansible revission
       ansible.builtin.debug:
         var: tower_project_revision
+    - name: Hotfix in main
+      ansible.builtin.debug:
+        msg: "Hotfix"
