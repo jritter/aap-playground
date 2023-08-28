@@ -1,0 +1,7 @@
+- name: Tower Revision
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Print ansible revission
+      ansible.builtin.debug:
+        var: tower_project_revision
